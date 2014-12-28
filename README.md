@@ -26,7 +26,7 @@ is syntactic sugar for:
 
     var promise = request
       .get('/location')
-      .end();
+      .endAsync();
 
     promise
       .then( function(response) {

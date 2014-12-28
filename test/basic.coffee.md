@@ -23,13 +23,13 @@
       it 'should be successful', ->
         Request
         .get 'http://127.0.0.1:3000/foo.txt'
-        .end()
+        .endAsync()
         .should.be.fulfilled
 
       it 'should return a value', ->
         Request
         .get 'http://127.0.0.1:3000/foo.txt'
-        .end()
+        .endAsync()
         .then (res) ->
           res.text
         .should.eventually.equal 'OK'
@@ -38,7 +38,7 @@
         Request
         .get 'http://127.0.0.1:3000/foo.json'
         .accept 'json'
-        .end()
+        .endAsync()
         .then (res) ->
           res.body
         .should.eventually.deep.equal ok:true
@@ -46,7 +46,7 @@
       it 'should fail appropriately', ->
         Request
         .get 'http://127.0.0.1:3000/unknown'
-        .end()
+        .endAsync()
         .should.be.rejected
 
       it 'should handle then()', ->

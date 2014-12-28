@@ -6,11 +6,10 @@ SuperAgent as Promised
 
     # Request.Request.prototype.end = Promise.promisify Request.Request.prototype.end
 
-    _end = Request.Request.prototype.end
-    Request.Request.prototype.end = ->
+    Request.Request.prototype.endAsync = ->
       new Promise (resolve,reject) =>
         try
-          _end.call this, (error, response) ->
+          @end (error, response) ->
             if error
               reject error
               return
@@ -22,10 +21,10 @@ SuperAgent as Promised
           reject error
 
     Request.Request.prototype.then = ->
-      @end()
+      @endAsync()
       .then arguments...
     Request.Request.prototype.catch = ->
-      @end()
+      @endAsync()
       .catch arguments...
 
     module.exports = Request

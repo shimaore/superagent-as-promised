@@ -1,6 +1,6 @@
 {
   "name": "superagent-as-promised",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "SuperAgent with a Promise twist",
   "main": "index.js",
   "scripts": {

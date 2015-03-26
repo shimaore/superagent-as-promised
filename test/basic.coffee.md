@@ -55,8 +55,23 @@
         .get 'http://127.0.0.1:3000/foo.json'
         .accept 'json'
         .then (res) ->
+          res
+        .should.eventually.have.property 'ok', true
+
+      it 'should handle then() with body', ->
+        Request
+        .get 'http://127.0.0.1:3000/foo.json'
+        .accept 'json'
+        .then (res) ->
           res.body
         .should.eventually.deep.equal ok:true
+
+      it 'should reject on error', ->
+        Request
+        .get 'http://127.0.0.1:3000/unknown'
+        .then ->
+          null
+        .should.be.rejected
 
       it 'should handle catch()', ->
         Request

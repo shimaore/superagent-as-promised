@@ -26,3 +26,5 @@ SuperAgent as Promised
       Request.Request.prototype.catch = ->
         @endAsync()
         .catch arguments...
+
+      Request

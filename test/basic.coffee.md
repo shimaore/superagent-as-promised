@@ -2,7 +2,8 @@
     chai.use require 'chai-as-promised'
     chai.should()
 
-    Request = require '..'
+    Request = require 'superagent'
+    (require '..') Request
     express = require 'express'
 
     describe 'SuperAgent as Promise', ->

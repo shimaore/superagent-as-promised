@@ -15,9 +15,9 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^2.3.11",
-    "superagent": "^0.21.0"
   },
   "devDependencies": {
+    "superagent": "^1.1.0",
     "chai": "^1.10.0",
     "chai-as-promised": "^4.1.1",
     "coffee-script": "^1.8.0",

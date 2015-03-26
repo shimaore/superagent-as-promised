@@ -11,7 +11,10 @@ Installation
 Usage
 -----
 
-    var request = require('superagent-as-promised');
+    var request = require('superagent');
+    require('superagent-as-promised')(request);
+
+Then
 
     request
     .get('/location')

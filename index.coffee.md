@@ -10,10 +10,10 @@ SuperAgent as Promised
         new Promise (resolve,reject) =>
           try
             @end (error, response) ->
-              if error?
+              if error
                 reject error
                 return
-              if response.error?
+              if response.error
                 reject response.error
                 return
               resolve response

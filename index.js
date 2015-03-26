@@ -32,10 +32,11 @@
       var ref;
       return (ref = this.endAsync()).then.apply(ref, arguments);
     };
-    return Request.Request.prototype["catch"] = function() {
+    Request.Request.prototype["catch"] = function() {
       var ref;
       return (ref = this.endAsync())["catch"].apply(ref, arguments);
     };
+    return Request;
   };
 
 }).call(this);

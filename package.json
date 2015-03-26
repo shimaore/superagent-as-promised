@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "coffee -c index.coffee.md",
+    "pretest": "npm install",
     "test": "mocha"
   },
   "keywords": [

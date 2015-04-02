@@ -15,11 +15,11 @@
   "author": "Stéphane Alnet <stephane@shimaore.net> (http://stephane.shimaore.net/)",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^2.9.14"
+    "bluebird": "^2.9.24"
   },
   "devDependencies": {
     "superagent": "^1.1.0",
-    "chai": "^2.1.2",
+    "chai": "^2.2.0",
     "chai-as-promised": "^4.3.0",
     "coffee-script": "^1.9.1",
     "express": "^4.12.3",

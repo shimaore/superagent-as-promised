@@ -38,3 +38,11 @@ is syntactic sugar for:
       .catch( function(error) {
         console.dir(error);
       })
+
+Options
+-------
+
+    require('superagent-as-promised')(SuperAgent,Promise);
+
+`SuperAgent` must be a SuperAgent class; it is extended with `endAsync()`, `then`, and `catch` methods.
+The optional `Promise` parameter allows you to provide your own Promise class; `bluebird` is used by default.

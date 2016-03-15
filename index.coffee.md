@@ -2,8 +2,9 @@ SuperAgent as Promised
 ======================
 
     # Request.Request.prototype.end = Promise.promisify Request.Request.prototype.end
+    NativePromise = Promise
 
-    module.exports = (Request,Promise = require 'bluebird') ->
+    module.exports = (Request,Promise = NativePromise) ->
       Request.Request.prototype.endAsync = ->
         new Promise (resolve,reject) =>
           try

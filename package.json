@@ -14,10 +14,8 @@
   ],
   "author": "Stéphane Alnet <stephane@shimaore.net> (http://stephane.shimaore.net/)",
   "license": "MIT",
-  "dependencies": {
-    "bluebird": "^3.0.5"
-  },
   "devDependencies": {
+    "bluebird": "^3.0.5",
     "chai": "^3.4.1",
     "chai-as-promised": "^5.1.0",
     "coffee-script": "^1.10.0",

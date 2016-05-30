@@ -15,12 +15,12 @@
   "author": "Stéphane Alnet <stephane@shimaore.net> (http://stephane.shimaore.net/)",
   "license": "MIT",
   "devDependencies": {
-    "bluebird": "^3.0.5",
-    "chai": "^3.4.1",
-    "chai-as-promised": "^5.1.0",
+    "bluebird": "^3.4.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
     "coffee-script": "^1.10.0",
-    "express": "^4.13.3",
-    "mocha": "^2.3.3",
-    "superagent": "^1.4.0"
+    "express": "^4.13.4",
+    "mocha": "^2.5.3",
+    "superagent": "^2.0.0"
   }
 }

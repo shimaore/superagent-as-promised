@@ -1,7 +1,13 @@
 SuperAgent as Promise(d)
 =====================
 
-[SuperAgent](http://visionmedia.github.io/superagent/) as [Promise](https://github.com/petkaantonov/bluebird/blob/master/API.md)
+[SuperAgent](http://visionmedia.github.io/superagent/) as Promise.
+
+The returned Promise will reject both on SuperAgent error, and on error in the response.
+
+Compare with [the promise plugin](https://github.com/jomaxx/superagent-promise-plugin), which has similar semantics but a different interface.
+
+Also, SuperAgent 2.0 now returns native Promises from [`req.then`](https://visionmedia.github.io/superagent/#generator-support) (but it sticks to its original semantics).
 
 Installation
 ------------
@@ -45,4 +51,4 @@ Options
     require('superagent-as-promised')(SuperAgent,Promise);
 
 `SuperAgent` must be a SuperAgent class; it is extended with `endAsync()`, `then`, and `catch` methods.
-The optional `Promise` parameter allows you to provide your own Promise class; `bluebird` is used by default.
+The optional `Promise` parameter allows you to provide your own Promise class; the native Promise class is used by default.

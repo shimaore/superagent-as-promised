@@ -1,3 +1,5 @@
+Note: as I understand, this module is no longer needed. SuperAgent [as of 1.0.0](https://github.com/visionmedia/superagent/blob/master/History.md#100--2015-03-08) should now offer the same semantics as this module, [since 2.0.0](https://github.com/visionmedia/superagent/blob/master/History.md#200-2016-05-29) returns a real `Promise`, and [since 2.3.0](https://github.com/visionmedia/superagent/blob/master/History.md#230-2016-09-20) offers a `.catch` method.
+
 SuperAgent as Promise(d)
 =====================
 
